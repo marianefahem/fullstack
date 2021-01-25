@@ -1,0 +1,201 @@
+@import url('../css/fonts.css');
+html,body{
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+/*them font family*/
+.croot{
+   --Abel:'Abel',cursive;
+   --carter_One:'Big_Shoulders_Stencil_Text',cursive;
+   /*gradient colors*/
+--sky: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+    /*theme colors*/
+--text-gray:#104f55;
+--text-light:#d9d7dd;
+--bg-color:#5F7367;
+--midenight:#9876ff;
+}
+
+a{
+    text-decoration: none;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+h1{
+    font-family:var(--bg-color) ;
+    font-size: 2.5rem;
+}
+h2{
+   font-family: var(--carter_One); 
+}
+h3{
+    font-family:var(--carter_One-bg-color) ;
+    font-size: 1.3rem;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: var(--sky);
+    cursor: pointer;
+
+}
+button.btn{
+    border: none;
+    border-radius: 2rem 3rem;
+    padding: 1.4rem;
+    color: #5F7367;
+
+}
+/* --x--global classes-----x---*/
+
+/* ----navbar--------*/
+.nav{
+    background: white;
+    padding: 01rem;
+    height: 0rem;
+    min-height: 5vh;
+    overflow: hidden;
+    transition:height 1s ease-in-out;
+
+}
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+   }
+   .nav .toggle-collapse .toggle-icons{
+       display: flex;
+       justify-content:flex-end;
+       padding: 1.4rem 0;
+   }
+   .nav .toggle-collapse .toggle-icons i{
+       font-size: 1.4rem;
+       color: var(--text-gray);
+
+   }
+   .collapse{
+       height:30rem;
+   }
+.nav .nav-menu{
+    justify-content: space-between;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+.nav .nav-items {
+    display: flex;
+    margin: 0;
+    font-family: var(--Abel);
+}
+.nav .nav-items .nav-link{
+    padding: 1.1rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: var(--Abel);
+    font-size: 1.1rem;
+   
+}
+.nav .nav-items .nav-link:hover{
+    background-color: #9876ff;
+
+}
+.nav .nav-items .nav-link:hover a{
+    color: white;
+}
+.nav .nav-brand a{
+
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: var(--Abel);
+    font-size: 1.8rem;
+
+}
+.nav.social{
+    padding: 1.4rem 0;}
+   
+.nav .social i{
+    padding: 0.2rem;
+}
+nav .social i:hover{
+    color: rgb(32, 144, 218);
+
+}
+/* ---x---navbar-----x---*/
+/* -----main site section-------*/
+
+main .site-title{
+    background: url("../assets/img/portfolio-4.jpeg");
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+main .site-title .site-background{
+    padding-top: 10rem;
+    text-align: center;
+    color: ivory;
+}
+main .site-title h1,h3{
+    margin: 0.3rem; ;
+}
+main .site-title .btn:hover{
+    
+    background: transparent;
+    border: 1px solid forestgreen;
+    color: white;
+}
+
+/* --x-- site title-----x---*/
+
+/* --------blog carousel----------*/
+
+main .blog{
+    background: url("../assets/Abract01.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+    width: 100%;
+
+}
+main .blog .blog-post{
+    
+}
+
+/* -----x---blog carousel-----x-----*/
+
+/* --x--main content-----x---*/
+
+
+
+
+/* ----viewport less then or eqal to 750px--------*/
+@media only screen and (max-width:750px){
+    .nav .nav-menu,.nav-items{
+        flex-direction: column;    }
+        .nav .toggle-collapse{
+            display: initial;
+        }
+}
+/* ---x-viewport less then or eqal to 750px----x----*/
+
+
+
+
+
+
+
+
+/* ----navbar--------*/
+/* --x--navbar-----x---*/
